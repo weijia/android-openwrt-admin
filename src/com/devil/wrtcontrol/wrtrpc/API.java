@@ -4,6 +4,7 @@ import org.alexd.jsonrpc.JSONRPCClient;
 
 import android.util.Log;
 import com.devil.wrtcontrol.WRTControlActivity;
+import org.alexd.jsonrpc.JSONRPCParams;
 
 public class API
 {
@@ -12,7 +13,8 @@ public class API
 
 		try
 		{
-			JSONRPCClient client = JSONRPCClient.create( "http://" + WRTControlActivity.HOST + "/cgi-bin/luci/rpc/auth");
+			JSONRPCClient client = JSONRPCClient.create("http://" + WRTControlActivity.HOST +
+                    "/cgi-bin/luci/rpc/auth", JSONRPCParams.Versions.VERSION_2);
 			client.setConnectionTimeout( 2000 );
 			client.setSoTimeout( 2000 );
 			String token = client.callString("login", WRTControlActivity.USR, WRTControlActivity.PASS );
@@ -31,7 +33,8 @@ public class API
 	{
 		try
 		{
-			JSONRPCClient client = JSONRPCClient.create( "http://" + WRTControlActivity.HOST + "/cgi-bin/luci/rpc/uci?auth="+WRTControlActivity.Token);
+			JSONRPCClient client = JSONRPCClient.create("http://" + WRTControlActivity.HOST +
+                    "/cgi-bin/luci/rpc/uci?auth="+WRTControlActivity.Token, JSONRPCParams.Versions.VERSION_2);
 			client.setConnectionTimeout( 2000 );
 			client.setSoTimeout( 2000 );
 			String hostname = client.callString("get", "wireless.radio0.hwmode" );
