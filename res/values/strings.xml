@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, WRTControlActivity!</string>
+    <string name="app_name">WRTControl</string><string name="hostname">Host / IP</string><string name="defip">192.168.2.1</string>
+    
+    
+    <string name="port">Port:</string>
+    <string name="defport">80</string>
+    <string name="user">Username:</string>
+    <string name="password">Pass:</string>
+    <string name="defuser">root</string>
+    <string name="status">Status:</string>
+    <string name="nonauth">Not Authenticated</string>
+    <string name="auth">Authenticated</string>
+    <string name="saveset">Save Settings</string>
+    <string name="login">Login</string>
+    <string name="LAN">lan</string>
+    <string name="WAN">wan</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:menuCategory="container" android:visible="true" android:id="@+id/network" android:enabled="true" android:checkableBehavior="none">
+        <item android:visible="true" android:title="@string/LAN" android:id="@+id/lan" android:enabled="true" android:icon="@drawable/icon"></item>
+        <item android:visible="true" android:title="@string/WAN" android:id="@+id/wan" android:enabled="true" android:icon="@drawable/icon"></item>
+    </group>
+    
+</menu>

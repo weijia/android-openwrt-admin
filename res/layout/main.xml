@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/LinearLayout1" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1" android:orientation="vertical">
+    <DigitalClock android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:text="DigitalClock" android:id="@+id/digitalClock1" android:layout_width="wrap_content" android:layout_height="wrap_content"></DigitalClock>
+<TextView android:layout_alignParentLeft="true" android:layout_below="@+id/digitalClock1"  
+    android:layout_height="wrap_content" android:text="@string/hostname" android:id="@+id/hostlbl" android:layout_width="110dp"/>
+<EditText android:layout_alignParentLeft="true" android:layout_below="@+id/hostlbl" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/hosttxt" android:text="@string/defip">
+    <requestFocus></requestFocus>
+</EditText>
+<TextView android:layout_alignParentLeft="true" android:layout_below="@+id/hosttxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/portlbl" android:text="@string/port"></TextView>
+<EditText android:layout_alignParentLeft="true" android:layout_below="@+id/portlbl" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/porttxt" android:text="@string/defport"></EditText>
+<TextView android:layout_alignParentLeft="true" android:layout_below="@+id/porttxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/userlbl" android:text="@string/user"></TextView>
+<EditText android:layout_alignParentLeft="true" android:layout_below="@+id/userlbl" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/usertxt" android:text="@string/defuser"></EditText>
+<TextView android:layout_alignParentLeft="true" android:layout_below="@+id/usertxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/passlbl" android:text="@string/password"></TextView>
+<EditText android:layout_alignParentLeft="true" android:layout_below="@+id/passlbl" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:id="@+id/passtxt"></EditText>
+<TextView android:layout_alignParentLeft="true" android:layout_below="@+id/passtxt" android:layout_width="wrap_content" android:id="@+id/statLbl" android:layout_height="wrap_content" android:text="@string/status"></TextView>
+<EditText android:layout_alignParentLeft="true" android:layout_below="@+id/statLbl" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/stattxt" android:text="@string/nonauth"></EditText>
+<Button android:layout_alignParentLeft="true" android:layout_below="@+id/stattxt" android:layout_height="wrap_content" android:id="@+id/savebtn" android:text="@string/saveset" android:layout_width="220px"></Button>
+<Button  android:layout_height="wrap_content" android:layout_below="@+id/stattxt" android:text="@string/login" android:id="@+id/loginbtn" android:layout_alignParentRight="true" android:layout_width="220px"></Button>
+</RelativeLayout>
